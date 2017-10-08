@@ -1,0 +1,46 @@
+Di kerjakan Oleh :
+Nama  	   : Imam Yudono
+Fakultas   : Fakultas Teknologi dan Informasi
+Prodi 	   : Teknik Informatika
+---------------------------------------------------
+uses wincrt;
+var
+	a,b,hasil :real;
+	pilih : integer;
+begin
+	writeln('Pilih pengoperasian dengan menekan angka');
+	writeln('1. Penjumlahan ') ;
+	writeln('2. Pengurangan ') ;
+	writeln('3. Perkalian ');
+	writeln('4. Pembagian ');
+	writeln();
+	write('Silahkan pilih : ');readln(pilih);
+	writeln();
+	case pilih of
+	1: begin
+	write('Masukkan nilai a = ');readln(a);
+	write('Masukkan nilai b = ');readln(b);
+	hasil:= a+ b;
+	writeln(' Hasil = ',hasil:5:2);
+	end;
+	2: begin
+	write('Masukkan nilai a = ');readln(a);
+	write('Masukkan nilai b = ');readln(b);
+	hasil:= a-b;
+	writeln(' Hasil = ',hasil:5:2);
+	end;
+	3: begin
+	write('Masukkan nilai a = ');readln(a);
+	write('Masukkan nilai b = ');readln(b);
+	hasil:= a*b;
+	writeln(' Hasil = ',hasil:5:2);
+	end;
+	4: begin
+	write('Masukkan nilai a = ');readln(a);
+	write('Masukkan nilai b = ');readln(b);
+	hasil:= a/b;
+	writeln(' Hasil = ',hasil:5:2);
+	end;
+	end;
+readkey;
+end.

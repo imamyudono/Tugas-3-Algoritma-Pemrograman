@@ -1,0 +1,35 @@
+Di kerjakan Oleh :
+Nama  	   : Imam Yudono
+Fakultas   : Fakultas Teknologi dan Informasi
+Prodi 	   : Teknik Informatika
+---------------------------------------------------
+uses crt;
+
+var
+	alpro,sbo,rti,bindonesia,pancasila:integer;
+	a,b,c,d,e:string;
+begin
+	write('Masukan Nilai Alpro		: ');readln(alpro);
+	write('Masukan Nilai SBO		: ');readln(sbo);
+	write('Masukan Nilai RTI		: ');readln(rti);
+	write('Masukan Nilai Bahasa Indonesia	: ');readln(bindonesia);
+	write('Masukan Nilai Pancasila		: ');readln(pancasila);
+	writeln();
+	
+	if alpro<=50 then
+	a:='Alpro-';
+	if sbo<=50 then
+	b:='SBO-';
+	if rti<=50 then
+	c:='RTI-';
+	if bindonesia<=50 then
+	d:='Bahasa Indonesia-';
+	if pancasila<=50 then
+	e:='Pancasila ';
+	
+	if alpro and sbo and rti and bindonesia and pancasila>50 then
+	writeln('Anda Tidak mendapat Remedial')
+	else
+	writeln('Anda mendapat Remedial : ',a,'',b,'',c,'',d,'',e,' ');
+readkey;
+end.
